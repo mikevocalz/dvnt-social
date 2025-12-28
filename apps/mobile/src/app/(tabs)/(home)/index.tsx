@@ -54,7 +54,7 @@ export default function Home() {
             </Pressable>
             <Pressable
               className="px-5 py-2.5 border border-gray-300 rounded-md active:opacity-80"
-              onPress={() => Linking.openURL("https://gurselcakar.com/writing/monorepo-guide")}
+              onPress={() => Linking.openURL("https://gurselcakar.com/monorepo")}
             >
               <Text className="text-gray-700 text-sm font-medium">Read Blog Post</Text>
             </Pressable>

@@ -36,4 +36,4 @@ pnpm web        # Open in browser
 
 ## Learn More
 
-For detailed setup and architecture information, see the [blog post](https://gurselcakar.com/writing/monorepo-guide) or check the main repository README.
+For detailed setup and architecture information, see the [blog post](https://gurselcakar.com/monorepo) or check the main repository README.

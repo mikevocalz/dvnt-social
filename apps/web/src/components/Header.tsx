@@ -16,7 +16,7 @@ export function Header() {
             NativeWind
           </Link>
           <Link
-            href="https://gurselcakar.com/writing/monorepo-guide"
+            href="https://gurselcakar.com/monorepo"
             target="_blank"
             rel="noopener"
             className="text-gray-600 hover:text-gray-900 transition-colors"

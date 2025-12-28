@@ -23,7 +23,7 @@ export function Hero() {
             Star on GitHub
           </Link>
           <Link
-            href="https://gurselcakar.com/writing/monorepo-guide"
+            href="https://gurselcakar.com/monorepo"
             target="_blank"
             rel="noopener"
             className="px-6 py-3 border border-gray-300 text-gray-700 text-sm font-medium rounded-md hover:border-gray-400 hover:text-gray-900 transition-colors"
