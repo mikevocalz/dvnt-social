@@ -10,7 +10,7 @@ export function Hero() {
 
         <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
           A production-ready monorepo template for building cross-platform applications
-          with shared components between React Native and Next.js.
+          with shared components between React Native and Vite.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
