@@ -3,6 +3,10 @@
 # Dependencies
 node_modules
 
+# Build outputs
+dist
+*.tsbuildinfo
+
 # Turbo
 .turbo
 
