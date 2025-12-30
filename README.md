@@ -24,7 +24,12 @@ Write React components once, run them on web, iOS, and Android. A Turborepo + Na
 └── turbo.json      # Turborepo config
 ```
 
-> **Choosing a web framework:** Both `web` (Next.js) and `web-vite` (Vite + TanStack Router) are included. Delete the one you don't need, or keep both for comparison.
+> **Choosing a web framework:** Both `web` (Next.js) and `web-vite` (Vite + TanStack Router) are included. Delete the one you don't need:
+> ```bash
+> rm -rf apps/web-vite  # Keep Next.js only
+> rm -rf apps/web       # Keep Vite only
+> ```
+> Then run `pnpm install` to clean up unused dependencies.
 
 ## Getting Started
 
