@@ -7,6 +7,7 @@ export default {
     './index.html',
     './src/**/*.{js,ts,jsx,tsx}',
     '../../packages/ui/src/**/*.{js,jsx,ts,tsx}',
+    '../../packages/app/**/*.{js,jsx,ts,tsx}',
   ],
   presets: [nativewindPreset],
   theme: {

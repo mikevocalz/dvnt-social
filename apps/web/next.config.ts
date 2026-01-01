@@ -1,3 +1,4 @@
+import path from 'path'
 import type { NextConfig } from 'next'
  
 const nextConfig: NextConfig = {
@@ -6,10 +7,13 @@ const nextConfig: NextConfig = {
     'react-native-web',
     'react-native-css-interop',
     'nativewind',
+    'nativewindui',
+    'app',
   ],
   webpack: (config) => {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
+      app: path.resolve(__dirname, '../../packages/app'),
       'react-native$': 'react-native-web',
     };
     config.resolve.extensions = [
