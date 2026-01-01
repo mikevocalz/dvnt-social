@@ -9,7 +9,7 @@ Vite web application with React Native Web integration for cross-platform compon
 - **TanStack Router** - Type-safe file-based routing
 - **React Native Web** - Renders React Native components as HTML
 - **NativeWind** - Cross-platform Tailwind CSS styling
-- **Shared UI Components** - From `packages/ui/` workspace
+- **Shared UI Components** - From `packages/app/ui/`
 
 ## Development
 
@@ -27,7 +27,7 @@ pnpm typecheck    # TypeScript type checking
 The app uses React Native Web to share components with the mobile app. Both HTML elements and React Native components work seamlessly together:
 
 ```tsx
-import { Button } from 'ui'
+import { Button } from 'app/ui'
 
 export default function Page() {
   return (
