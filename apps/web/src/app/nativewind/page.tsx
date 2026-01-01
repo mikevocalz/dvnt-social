@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { View } from 'react-native'
 import { Header, Footer } from '../../components'
-import { Button, Card, Text, Badge, Input } from 'ui'
+import { Button, Card, Text, Badge, Input } from 'app/ui'
 
 function ComponentSection({
   title,
@@ -55,7 +55,7 @@ export default function ComponentsPage() {
         <section className="px-6 pb-16">
           <div className="max-w-3xl mx-auto">
 
-            <ComponentSection title="Button" importStatement="import { Button } from 'ui'">
+            <ComponentSection title="Button" importStatement="import { Button } from 'app/ui'">
               <View className="flex-row gap-3 flex-wrap">
                 <Button title="Primary" onPress={() => {}} />
                 <Button title="Secondary" variant="secondary" onPress={() => {}} />
@@ -63,7 +63,7 @@ export default function ComponentsPage() {
               </View>
             </ComponentSection>
 
-            <ComponentSection title="Card" importStatement="import { Card } from 'ui'">
+            <ComponentSection title="Card" importStatement="import { Card } from 'app/ui'">
               <View className="gap-4">
                 <Card>
                   <Text variant="body">Default card with subtle border styling.</Text>
@@ -74,7 +74,7 @@ export default function ComponentsPage() {
               </View>
             </ComponentSection>
 
-            <ComponentSection title="Text" importStatement="import { Text } from 'ui'">
+            <ComponentSection title="Text" importStatement="import { Text } from 'app/ui'">
               <View className="gap-2">
                 <Text variant="title">Title variant</Text>
                 <Text variant="body">Body variant for regular content.</Text>
@@ -82,7 +82,7 @@ export default function ComponentsPage() {
               </View>
             </ComponentSection>
 
-            <ComponentSection title="Badge" importStatement="import { Badge } from 'ui'">
+            <ComponentSection title="Badge" importStatement="import { Badge } from 'app/ui'">
               <View className="flex-row gap-3 flex-wrap">
                 <Badge label="Default" />
                 <Badge label="Success" variant="success" />
@@ -90,7 +90,7 @@ export default function ComponentsPage() {
               </View>
             </ComponentSection>
 
-            <ComponentSection title="Input" importStatement="import { Input } from 'ui'">
+            <ComponentSection title="Input" importStatement="import { Input } from 'app/ui'">
               <View className="max-w-sm">
                 <Input
                   label="Email address"
