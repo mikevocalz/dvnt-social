@@ -1,4 +1,5 @@
-import { Header, Footer, Hero, TechStack, QuickStart } from '../components'
+import { Header, Footer } from '../components'
+import HomeScreenClient from '../components/HomeScreenClient'
 
 export default function Home() {
   return (
@@ -6,9 +7,7 @@ export default function Home() {
       <Header />
 
       <main className="flex-1">
-        <Hero />
-        <TechStack />
-        <QuickStart />
+        <HomeScreenClient />
       </main>
 
       <Footer />
