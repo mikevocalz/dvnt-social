@@ -3,11 +3,7 @@
 import { useState } from 'react'
 import { View } from 'react-native'
 import { Header, Footer } from '../../components'
-<<<<<<< HEAD
-import { Button, Card, Text, Badge, Input } from 'ui'
-=======
 import { Button, Card, Text, Badge, Input } from 'app/ui'
->>>>>>> pr-2
 
 function ComponentSection({
   title,
@@ -59,11 +55,7 @@ export default function ComponentsPage() {
         <section className="px-6 pb-16">
           <div className="max-w-3xl mx-auto">
 
-<<<<<<< HEAD
-            <ComponentSection title="Button" importStatement="import { Button } from 'ui'">
-=======
             <ComponentSection title="Button" importStatement="import { Button } from 'app/ui'">
->>>>>>> pr-2
               <View className="flex-row gap-3 flex-wrap">
                 <Button title="Primary" onPress={() => {}} />
                 <Button title="Secondary" variant="secondary" onPress={() => {}} />
@@ -71,11 +63,7 @@ export default function ComponentsPage() {
               </View>
             </ComponentSection>
 
-<<<<<<< HEAD
-            <ComponentSection title="Card" importStatement="import { Card } from 'ui'">
-=======
             <ComponentSection title="Card" importStatement="import { Card } from 'app/ui'">
->>>>>>> pr-2
               <View className="gap-4">
                 <Card>
                   <Text variant="body">Default card with subtle border styling.</Text>
@@ -86,11 +74,7 @@ export default function ComponentsPage() {
               </View>
             </ComponentSection>
 
-<<<<<<< HEAD
-            <ComponentSection title="Text" importStatement="import { Text } from 'ui'">
-=======
             <ComponentSection title="Text" importStatement="import { Text } from 'app/ui'">
->>>>>>> pr-2
               <View className="gap-2">
                 <Text variant="title">Title variant</Text>
                 <Text variant="body">Body variant for regular content.</Text>
@@ -98,11 +82,7 @@ export default function ComponentsPage() {
               </View>
             </ComponentSection>
 
-<<<<<<< HEAD
-            <ComponentSection title="Badge" importStatement="import { Badge } from 'ui'">
-=======
             <ComponentSection title="Badge" importStatement="import { Badge } from 'app/ui'">
->>>>>>> pr-2
               <View className="flex-row gap-3 flex-wrap">
                 <Badge label="Default" />
                 <Badge label="Success" variant="success" />
@@ -110,11 +90,7 @@ export default function ComponentsPage() {
               </View>
             </ComponentSection>
 
-<<<<<<< HEAD
-            <ComponentSection title="Input" importStatement="import { Input } from 'ui'">
-=======
             <ComponentSection title="Input" importStatement="import { Input } from 'app/ui'">
->>>>>>> pr-2
               <View className="max-w-sm">
                 <Input
                   label="Email address"

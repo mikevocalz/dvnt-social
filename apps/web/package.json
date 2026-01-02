@@ -10,19 +10,11 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "next": "16.1.0",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "react-native-web": "~0.21.1",
-    "ui": "workspace:*"
-=======
     "app": "workspace:*",
     "next": "16.1.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-native-web": "~0.21.1"
->>>>>>> pr-2
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
