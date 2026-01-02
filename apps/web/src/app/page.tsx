@@ -1,13 +1,18 @@
+'use client'
+
+import { useRouter } from 'next/navigation'
 import { Header, Footer } from '../components'
-import HomeScreenClient from '../components/HomeScreenClient'
+import { HomeScreen } from 'app/features/home'
 
 export default function Home() {
+  const router = useRouter()
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Header />
 
       <main className="flex-1">
-        <HomeScreenClient />
+        <HomeScreen onViewComponents={() => router.push('/nativewind')} />
       </main>
 
       <Footer />
