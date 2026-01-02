@@ -8,11 +8,7 @@ Expo-based React Native application demonstrating cross-platform component shari
 - **React Native 0.81.5**: Cross-platform mobile development
 - **NativeWind 4.x**: Tailwind CSS styling for React Native
 - **Expo Router 6.x**: File-based routing with tab navigation
-<<<<<<< HEAD
-- **Shared UI Components**: Reusable components from `packages/ui/`
-=======
 - **Shared UI Components**: Reusable components from `packages/app/ui/`
->>>>>>> pr-2
 
 ## Development Commands
 
