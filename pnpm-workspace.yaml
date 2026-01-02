@@ -1,6 +1,10 @@
 packages:
   - apps/*
   - packages/*
+<<<<<<< HEAD
+=======
+  - packages/*/*
+>>>>>>> pr-2
 
 onlyBuiltDependencies:
   - sharp

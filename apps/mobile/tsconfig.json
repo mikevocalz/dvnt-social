@@ -5,6 +5,12 @@
     "paths": {
       "@/*": [
         "./*"
+<<<<<<< HEAD
+=======
+      ],
+      "app/*": [
+        "../../packages/app/*"
+>>>>>>> pr-2
       ]
     }
   },
@@ -16,4 +22,8 @@
     "babel.config.js",
     "nativewind-env.d.ts"
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> pr-2

@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { Text, View, Alert, ScrollView } from "react-native";
+<<<<<<< HEAD
 import { Button, Card, Text as UIText, Badge, Input } from "ui";
+=======
+import { Button, Card, Text as UIText, Badge, Input } from "app/ui";
+>>>>>>> pr-2
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Header } from "../../../components";
 
@@ -48,7 +52,11 @@ export default function Demo() {
           Add, modify, or reorganize these components however you like.
         </Text>
 
+<<<<<<< HEAD
         <ComponentSection title="Button" importStatement="from 'ui'">
+=======
+        <ComponentSection title="Button" importStatement="from 'app/ui'">
+>>>>>>> pr-2
           <View className="flex-row gap-3 flex-wrap">
             <Button title="Primary" onPress={() => Alert.alert('Pressed', 'Primary button')} />
             <Button title="Secondary" variant="secondary" onPress={() => {}} />
@@ -56,7 +64,11 @@ export default function Demo() {
           </View>
         </ComponentSection>
 
+<<<<<<< HEAD
         <ComponentSection title="Card" importStatement="from 'ui'">
+=======
+        <ComponentSection title="Card" importStatement="from 'app/ui'">
+>>>>>>> pr-2
           <View className="gap-3">
             <Card>
               <UIText variant="body">Default card with subtle border styling.</UIText>
@@ -67,7 +79,11 @@ export default function Demo() {
           </View>
         </ComponentSection>
 
+<<<<<<< HEAD
         <ComponentSection title="Text" importStatement="from 'ui'">
+=======
+        <ComponentSection title="Text" importStatement="from 'app/ui'">
+>>>>>>> pr-2
           <View className="gap-2">
             <UIText variant="title">Title variant</UIText>
             <UIText variant="body">Body variant for regular content.</UIText>
@@ -75,7 +91,11 @@ export default function Demo() {
           </View>
         </ComponentSection>
 
+<<<<<<< HEAD
         <ComponentSection title="Badge" importStatement="from 'ui'">
+=======
+        <ComponentSection title="Badge" importStatement="from 'app/ui'">
+>>>>>>> pr-2
           <View className="flex-row gap-3 flex-wrap">
             <Badge label="Default" />
             <Badge label="Success" variant="success" />
@@ -83,7 +103,11 @@ export default function Demo() {
           </View>
         </ComponentSection>
 
+<<<<<<< HEAD
         <ComponentSection title="Input" importStatement="from 'ui'">
+=======
+        <ComponentSection title="Input" importStatement="from 'app/ui'">
+>>>>>>> pr-2
           <Input
             label="Email address"
             placeholder="you@example.com"

@@ -25,6 +25,12 @@
     "paths": {
       "@/*": [
         "./src/*"
+<<<<<<< HEAD
+=======
+      ],
+      "app/*": [
+        "../../packages/app/*"
+>>>>>>> pr-2
       ]
     },
     "jsxImportSource": "nativewind",

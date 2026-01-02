@@ -20,7 +20,11 @@ Write React components once, run them on web, iOS, and Android. A Turborepo + Na
 │   ├── web/        # Next.js web app
 │   └── web-vite/   # Vite web app (alternative)
 ├── packages/
+<<<<<<< HEAD
 │   └── ui/         # Shared component library
+=======
+│   └── app/        # Shared app package
+>>>>>>> pr-2
 └── turbo.json      # Turborepo config
 ```
 
@@ -72,7 +76,11 @@ pnpm --filter mobile dev    # Expo Metro bundler
 
 ## How It Works
 
+<<<<<<< HEAD
 - **Shared Components**: `packages/ui/` contains React Native components styled with NativeWind
+=======
+- **Shared Components**: `packages/app/ui` contains React Native components styled with NativeWindUI
+>>>>>>> pr-2
 - **Web**: Next.js uses react-native-web to render React Native components as HTML
 - **Mobile**: Expo renders components natively on iOS/Android
 

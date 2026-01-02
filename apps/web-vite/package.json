@@ -12,10 +12,17 @@
   },
   "dependencies": {
     "@tanstack/react-router": "^1.93.0",
+<<<<<<< HEAD
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-native-web": "~0.21.1",
     "ui": "workspace:*",
+=======
+    "app": "workspace:*",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native-web": "~0.21.1",
+>>>>>>> pr-2
     "vite-plugin-react-native-web": "^2.5.0"
   },
   "devDependencies": {

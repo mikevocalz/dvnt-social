@@ -13,7 +13,12 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "paths": {
+<<<<<<< HEAD
       "@/*": ["./src/*"]
+=======
+      "@/*": ["./src/*"],
+      "app/*": ["../../packages/app/*"]
+>>>>>>> pr-2
     },
     "jsxImportSource": "nativewind",
     "types": ["nativewind/types"]

@@ -16,6 +16,10 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+<<<<<<< HEAD
+=======
+      app: path.resolve(__dirname, '../../packages/app'),
+>>>>>>> pr-2
     },
   },
   build: {
