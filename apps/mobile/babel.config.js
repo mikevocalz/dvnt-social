@@ -7,6 +7,18 @@ module.exports = function (api) {
       ],
       plugins: [
         "react-native-worklets/plugin",
+        [
+          "module-resolver",
+          {
+            root: ["./"],
+            alias: {
+              "solito/image": "solito/image/expo",
+              //   'better-auth/react': './node_modules/better-auth/dist/client/react/index.cjs',
+              //   '@better-auth/expo/client': './node_modules/@better-auth/expo/dist/client.cjs',
+            },
+            extensions: [".cjs", ".js", ".jsx", ".ts", ".tsx"],
+          },
+        ],
       ],
     };
   };

@@ -28,6 +28,12 @@
       ],
       "app/*": [
         "../../packages/app/*"
+      ],
+      "@ui": [
+        "../../packages/app/ui"
+      ],
+      "@ui/*": [
+        "../../packages/app/ui/*"
       ]
     },
     "jsxImportSource": "nativewind",

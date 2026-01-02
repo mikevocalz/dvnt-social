@@ -2,7 +2,19 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "app/*": [
+        "./*"
+      ],
+      "@ui": [
+        "./ui"
+      ],
+      "@ui/*": [
+        "./ui/*"
+      ]
+    }
   },
   "include": [
     "**/*.ts",

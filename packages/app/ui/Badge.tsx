@@ -1,21 +1,37 @@
-import { Badge as NativeBadge } from 'nativewindui';
-import type { ComponentProps, ComponentType } from 'react';
+import type { ComponentProps } from 'react';
+import { View } from 'react-native';
+import { Text } from './Text';
 
-type NativeBadgeProps = ComponentProps<typeof NativeBadge>;
-
-interface BadgeProps extends Omit<NativeBadgeProps, 'children' | 'variant'> {
+type BadgeVariant = 'default' | 'success' | 'warning';
+type BadgeProps = Omit<ComponentProps<typeof View>, 'children'> & {
   label: string;
-  variant?: 'default' | 'success' | 'warning';
-}
+  variant?: BadgeVariant;
+  className?: string;
+};
 
-const NativeBadgeComponent = NativeBadge as ComponentType<
-  NativeBadgeProps & { variant?: BadgeProps['variant'] }
->;
+const VARIANT_CLASS: Record<BadgeVariant, { container: string; text: string }> = {
+  default: {
+    container: 'bg-slate-100 border border-slate-200',
+    text: 'text-slate-700',
+  },
+  success: {
+    container: 'bg-emerald-50 border border-emerald-200',
+    text: 'text-emerald-700',
+  },
+  warning: {
+    container: 'bg-amber-50 border border-amber-200',
+    text: 'text-amber-700',
+  },
+};
 
-export function Badge({ label, variant, ...props }: BadgeProps) {
+export function Badge({ label, variant = 'default', className, ...props }: BadgeProps) {
+  const variantClass = VARIANT_CLASS[variant];
+  const combinedClassName = className
+    ? `rounded-full px-2.5 py-1 ${variantClass.container} ${className}`
+    : `rounded-full px-2.5 py-1 ${variantClass.container}`;
   return (
-    <NativeBadgeComponent {...props} variant={variant}>
-      {label}
-    </NativeBadgeComponent>
+    <View {...props} className={combinedClassName}>
+      <Text className={`text-xs font-semibold ${variantClass.text}`}>{label}</Text>
+    </View>
   );
 }

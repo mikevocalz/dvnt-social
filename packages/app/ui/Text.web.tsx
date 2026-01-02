@@ -1,19 +1,8 @@
 import { type VariantProps, cva } from "class-variance-authority";
-import { cssInterop } from "nativewind";
 import * as React from "react";
-import { Platform, Text as RNText } from "react-native";
+import { Text as RNText } from "react-native";
 
 import { cn } from "../lib/cn";
-
-const NativeUITextView: React.ComponentType<any> | null =
-  Platform.OS === "web"
-    ? null
-    : // eslint-disable-next-line @typescript-eslint/no-var-requires
-      require("react-native-uitextview").UITextView;
-
-if (NativeUITextView) {
-  cssInterop(NativeUITextView, { className: "style" });
-}
 
 const textVariants = cva("text-foreground", {
   variants: {
@@ -52,9 +41,8 @@ function Text({
   ...props
 }: React.ComponentProps<typeof RNText> & VariantProps<typeof textVariants>) {
   const textClassName = React.useContext(TextClassContext);
-  const Component: React.ComponentType<any> = NativeUITextView ?? RNText;
   return (
-    <Component
+    <RNText
       className={cn(textVariants({ variant, color }), textClassName, className)}
       {...props}
     />

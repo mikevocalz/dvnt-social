@@ -1,21 +1,43 @@
-import { Button as NativeButton } from 'nativewindui';
-import type { ComponentProps, ComponentType } from 'react';
+import type { ComponentProps } from 'react';
+import { Pressable } from 'react-native';
+import { Text } from './Text';
 
-type NativeButtonProps = ComponentProps<typeof NativeButton>;
-
-interface ButtonProps extends Omit<NativeButtonProps, 'children' | 'variant'> {
+type ButtonVariant = 'primary' | 'secondary' | 'outline';
+type ButtonProps = Omit<ComponentProps<typeof Pressable>, 'children'> & {
   title: string;
-  variant?: 'primary' | 'secondary' | 'outline';
-}
+  variant?: ButtonVariant;
+  className?: string;
+};
 
-const NativeButtonComponent = NativeButton as ComponentType<
-  NativeButtonProps & { variant?: ButtonProps['variant'] }
->;
+const VARIANT_CLASS: Record<ButtonVariant, { button: string; text: string }> = {
+  primary: {
+    button: 'bg-blue-600 border border-blue-600',
+    text: 'text-white',
+  },
+  secondary: {
+    button: 'bg-slate-100 border border-slate-200',
+    text: 'text-slate-900',
+  },
+  outline: {
+    button: 'bg-transparent border border-slate-300',
+    text: 'text-slate-900',
+  },
+};
 
-export function Button({ title, variant, ...props }: ButtonProps) {
+export function Button({
+  title,
+  variant = 'primary',
+  className,
+  ...props
+}: ButtonProps) {
+  const variantClass = VARIANT_CLASS[variant];
+  const baseClassName = 'inline-flex items-center justify-center w-auto';
+  const combinedClassName = className
+    ? `${baseClassName} rounded-lg px-4 py-3 ${variantClass.button} ${className}`
+    : `${baseClassName} rounded-lg px-4 py-3 ${variantClass.button}`;
   return (
-    <NativeButtonComponent {...props} variant={variant}>
-      {title}
-    </NativeButtonComponent>
+    <Pressable {...props} className={combinedClassName}>
+      <Text className={`text-center font-semibold ${variantClass.text}`}>{title}</Text>
+    </Pressable>
   );
 }

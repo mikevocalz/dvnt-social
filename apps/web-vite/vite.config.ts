@@ -17,6 +17,19 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
       app: path.resolve(__dirname, '../../packages/app'),
+      '@ui': path.resolve(__dirname, '../../packages/app/ui'),
+      'react-native-uitextview': path.resolve(
+        __dirname,
+        './src/shims/react-native-uitextview.ts'
+      ),
+    },
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        '.js': 'jsx',
+        '.mjs': 'jsx',
+      },
     },
   },
   build: {
