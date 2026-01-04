@@ -87,7 +87,7 @@ export default function ComponentsPage() {
                     Default card with subtle border styling.
                   </Text>
                 </Card>
-                <Card variant="elevated">
+                <Card>
                   <Text variant="body">
                     Elevated card with shadow for emphasis.
                   </Text>
