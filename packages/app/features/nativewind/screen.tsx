@@ -100,9 +100,9 @@ export default function ComponentsPage() {
               importStatement="import { Text } from 'app/ui'"
             >
               <View className="gap-2">
-                <Text variant="title">Title variant</Text>
+                <Text variant="title1">Title variant</Text>
                 <Text variant="body">Body variant for regular content.</Text>
-                <Text variant="caption">
+                <Text variant="caption1">
                   Caption variant for secondary information.
                 </Text>
               </View>
