@@ -1,3 +1,7 @@
 "use client";
 
-export { HomeScreen as default } from "app/features/home/screen";
+import { HomeScreen } from "app/features/home/screen";
+
+export default function Page() {
+  return <HomeScreen />;
+}
